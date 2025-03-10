@@ -22,4 +22,3 @@ try:
     print(f"Оценка за {grade} баллов: {result}")
 except ValueError:
     print("Введите целое число")
-
