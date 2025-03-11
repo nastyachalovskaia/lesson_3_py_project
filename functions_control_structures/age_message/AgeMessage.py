@@ -13,12 +13,13 @@ def age_message(user_birth_year):
     current_year = datetime.now().year
     age = current_year - user_birth_year
     if age < 18:
-        print("Вы еще молоды, учеба — ваш путь!")
+        return "Вы еще молоды, учеба — ваш путь!"
     elif 18 <= age <= 65:
-        print("Отличный возраст для карьерного роста!")
+        return "Отличный возраст для карьерного роста!"
     else:
-        print("Пора наслаждаться заслуженным отдыхом!")
+        return "Пора наслаждаться заслуженным отдыхом!"
 
 birth_year = int(input("Введите год вашего рождения: "))
 
-age_message(birth_year)
+result = age_message(birth_year)
+print(result)

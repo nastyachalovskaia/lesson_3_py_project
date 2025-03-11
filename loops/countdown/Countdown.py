@@ -7,7 +7,7 @@
 # - Не возвращайте значение, а напрямую выводите результат с помощью функции **`print()`**.
 
 def countdown():
-    for i in reversed(range(1, 10)):
+    for i in reversed(range(1, 11)):
         print(i)
 
 countdown()
