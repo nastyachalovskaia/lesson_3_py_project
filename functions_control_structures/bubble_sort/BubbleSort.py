@@ -10,12 +10,13 @@ def bubble_sort(numbers):
         for i in range(n-1-run):
             if numbers[i] > numbers[i + 1]:
                 numbers[i], numbers[i + 1] = numbers[i + 1], numbers[i]
+    return numbers
 
 user_input = input("Введите числа через запятую: ").replace(" ", "")
 
 try:
     user_numbers = list(map(int, user_input.split(",")))
-    bubble_sort(user_numbers)
-    print("Отсортированный массив:", user_numbers)
+    result = bubble_sort(user_numbers)
+    print("Отсортированный массив:", result)
 except ValueError:
     print("Введите числа, разделённые запятыми.")

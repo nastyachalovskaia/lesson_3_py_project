@@ -8,10 +8,7 @@
 # - Выведите результат с помощью функции **`print()`**.
 
 def find_max(a, b):
-    if a >= b:
-        return a
-    else:
-        return b
+    return a if a >= b else b
 
 user_input_a = int(input("Введите чиселко a: "))
 user_input_b = int(input("Введите чиселко b: "))

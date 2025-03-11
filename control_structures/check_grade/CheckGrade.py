@@ -16,9 +16,14 @@ def check_grade(score):
     else:
         raise ValueError("Введите оценку от 0 до 100")
 
-try:
-    grade = int(input("Введите оценку: "))
-    result = check_grade(grade)
-    print(f"Оценка за {grade} баллов: {result}")
-except ValueError:
-    print("Введите целое число")
+def grade_input():
+    try:
+        grade = int(input("Введите оценку: "))
+        return grade
+    except ValueError:
+        print("Введите целое число")
+        exit()
+
+user_grade = grade_input()
+result = check_grade(user_grade)
+print(f"Оценка за {user_grade} балла/ов: {result}")

@@ -6,10 +6,10 @@
 # - Выведите результат с помощью функции **`print()`**.
 
 def sum_numbers(n):
-    sum = 0
+    summa = 0
     for i in range(1, n+1):
-        sum += i
-    return sum
+        summa += i
+    return summa
 
 user_input = int(input("Введите число: "))
 result = sum_numbers(user_input)

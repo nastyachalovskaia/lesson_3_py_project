@@ -10,7 +10,7 @@ def greet_user(name):
 greet_user(input("Введите имя: "))
 
 def calculate_sum(a, b):
-    return a+b
+    return a + b
 
 num1 = int(input(f"Введите первое число: "))
 num2 = int(input(f"Введите второе число: "))
