@@ -4,12 +4,16 @@
 # - Не возвращайте значение, а напрямую выводите фигуру с помощью функции **`print()`**.
 
 def print_diamond(rows):
-    for i in range(1, rows, 2):
-        i = ' ' * ((rows - i) // 2) + '*' * i
-        print(i)
-    for i in range(rows, 0, -2):
-        i = ' ' * ((rows - i) // 2) + '*' * i
-        print(i)
+    if rows % 2 == 0:
+        rows -= 1
+
+    for i in range(1, rows + 1, 2):
+        spaces = (rows - i) // 2
+        print(" " * spaces + "*" * i)
+
+    for i in range(rows - 2, 0, -2):
+        spaces = (rows - i) // 2
+        print(" " * spaces + "*" * i)
 
 user_input = int(input("Введите желаемое количество *: "))
 print_diamond(user_input)
